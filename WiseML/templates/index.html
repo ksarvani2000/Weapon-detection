@@ -1,0 +1,76 @@
+ <html>
+  <head>
+    <title>Weapon Detection</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+   
+  </head>
+  <style>
+  body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+    color: #fff;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.body{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background-image: url(https://images.unsplash.com/photo-1610165539750-051008c3e799?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+	background-size: cover;
+  
+}
+.login-wrapper{
+    margin-top: 223px;
+    }
+.section{
+    
+    padding: 176px 80px 337px 80px;}
+.h2{
+        color:#c9c2c2;
+        margin: 0 0 15px 0;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-family: "Lucida Console", "Courier New", monospace;
+}
+.form-control {
+   
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    height: 45px;
+    width: 400px;
+    margin-bottom: 10px;
+    margin-left: 340px;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+  </style>
+  <body>
+    <div>
+      <section class="login-wrapper" >
+       
+        <div class="container">
+            <h2 class = "text-center">WEAPON DETECTION</h2><br>
+            <form class = "p-3 text-center" action = '/', method="post" enctype = "multipart/form-data">
+              <input class = "form-control" type="file" name="imagefile">
+              <input class = "btn btn-primary mt-3" type="submit" value="Predict Image">
+            </form>
+            
+            {% if prediction %}
+              <h5 class = "text-center" > Image is a {{prediction}} </h5>
+            {% endif %}
+            
+          
+        </div>
+      </section> 
+    </div>
+    </div>
+  </body>
+</html>

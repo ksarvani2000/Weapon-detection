@@ -1,0 +1,28 @@
+body{
+   
+    background:#f8f8f8;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    font-size:15px;
+    color:#636e7b;
+   
+}
+section{
+    padding: 176px 80px 337px 80px;}
+h1, h2, h3, h4, h5, h6 {
+        color:#c9c2c2;
+        margin: 0 0 15px 0;
+        letter-spacing: 1px;
+        font-weight: bold;
+}
+.form-control {
+   
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    height: 45px;
+    width: 400px;
+    margin-bottom: 10px;
+    margin-left: 340px;
+    box-shadow: none;
+    font-size: 14px;
+}
